@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <!-- link of css -->
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <!-- title -->
+    <h1>Task Manager</h1>
+  </header>
+  <main>
+    <section id="task-input">
+      <!-- input field to enter task -->
+      <input type="text" id="taskField" placeholder="Enter a new task">
+      <button id="addTaskBtn">Add Task</button>
+    </section>
+    <section id="filter-options">
+      <!-- dropdown filter -->
+      <label for="filterTasks">Filter Tasks:</label>
+      <select id="filterTasks">
+        <!-- show all tasks -->
+        <option value="all">All Tasks</option>
+        <!-- show completed tasks -->
+        <option value="completed">Completed Tasks</option>
+        <!-- show pendig tasks -->
+        <option value="pending">Pending Tasks</option>
+      </select>
+    </section>
+    <section id="task-list">
+      <!-- list of tasks --> 
+      <ul id="tasks"></ul>
+    </section>
+  </main>
+  <script src="../js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
